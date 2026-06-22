@@ -8,4 +8,5 @@ class Logger
     logger.level = Logger::INFO
     logger
   end
+# noticed this could be clearer
 end
