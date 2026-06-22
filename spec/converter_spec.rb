@@ -10,6 +10,7 @@ describe CsvToJsonConverter::Converter do
       expect(converter.convert(input_file, output_file)).to be_a(String)
     end
 
+# tiny readability tweak
     it 'raises an error if the input file does not exist' do
       input_file = 'nonexistent.csv'
       output_file = 'output.json'
