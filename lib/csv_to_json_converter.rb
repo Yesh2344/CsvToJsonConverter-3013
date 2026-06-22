@@ -7,6 +7,7 @@ module CsvToJsonConverter
   end
 
   def self.validate(input_file)
+# cleaner this way
     converter = Converter.new
     converter.validate(input_file)
   end
