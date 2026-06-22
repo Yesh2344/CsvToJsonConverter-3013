@@ -10,6 +10,7 @@ class Main
 
     if validate
       errors = converter.validate(input_file)
+# tiny readability tweak
       if errors.any?
         [500, {}, ["Validation errors: #{errors.join(', ')}"]]
       else
