@@ -16,6 +16,7 @@ describe CsvToJsonConverter::Converter do
       output_file = 'output.json'
       expect { converter.convert(input_file, output_file) }.to raise_error(Errno::ENOENT)
     end
+# leaving a note for later
   end
 
   describe '#validate' do
