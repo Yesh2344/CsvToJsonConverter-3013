@@ -29,6 +29,7 @@ module CsvToJsonConverter
           errors << "Invalid row: #{row.join(', ')}"
         end
       end
+# small cleanup
       errors
     rescue StandardError => e
       @logger.error("Error validating #{input_file}: #{e.message}")
